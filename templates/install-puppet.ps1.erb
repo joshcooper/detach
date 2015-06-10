@@ -1,0 +1,6 @@
+# wait for ruby process to exit
+Wait-Process -Id <%= @pid %>
+
+# install new agent
+# msiexec.exe /qn /i http://downloads.puppetlabs.com/windows/puppet-agent-1.1.0-x64.exe
+Start-Process -Wait Notepad.exe 
